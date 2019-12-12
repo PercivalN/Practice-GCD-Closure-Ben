@@ -13,6 +13,9 @@
 		DD2AD69B23A20B5E00EBC5DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2AD69923A20B5E00EBC5DB /* Main.storyboard */; };
 		DD2AD69D23A20B6100EBC5DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2AD69C23A20B6100EBC5DB /* Assets.xcassets */; };
 		DD2AD6A023A20B6100EBC5DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2AD69E23A20B6100EBC5DB /* LaunchScreen.storyboard */; };
+		DD7CED8923A217EB009C13C9 /* students.json in Resources */ = {isa = PBXBuildFile; fileRef = DD7CED8823A217EB009C13C9 /* students.json */; };
+		DD7CED8B23A21829009C13C9 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CED8A23A21829009C13C9 /* Student.swift */; };
+		DD7CED8E23A21863009C13C9 /* StudentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CED8D23A21863009C13C9 /* StudentController.swift */; };
 		DDAD218923A212AC00B47EB6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAD218823A212AC00B47EB6 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +28,9 @@
 		DD2AD69C23A20B6100EBC5DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD2AD69F23A20B6100EBC5DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD2AD6A123A20B6100EBC5DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD7CED8823A217EB009C13C9 /* students.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = students.json; sourceTree = "<group>"; };
+		DD7CED8A23A21829009C13C9 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		DD7CED8D23A21863009C13C9 /* StudentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentController.swift; sourceTree = "<group>"; };
 		DDAD218823A212AC00B47EB6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +69,7 @@
 				DD2AD69523A20B5E00EBC5DB /* SceneDelegate.swift */,
 				DD2AD69723A20B5E00EBC5DB /* StudentsViewController.swift */,
 				DD2AD6A723A20C3000EBC5DB /* Views */,
+				DD7CED8C23A2182D009C13C9 /* Models */,
 			);
 			path = Students;
 			sourceTree = "<group>";
@@ -79,11 +86,21 @@
 		DD2AD6A823A20C4E00EBC5DB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DD7CED8823A217EB009C13C9 /* students.json */,
 				DD2AD69323A20B5E00EBC5DB /* AppDelegate.swift */,
 				DD2AD69C23A20B6100EBC5DB /* Assets.xcassets */,
 				DD2AD6A123A20B6100EBC5DB /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		DD7CED8C23A2182D009C13C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD7CED8A23A21829009C13C9 /* Student.swift */,
+				DD7CED8D23A21863009C13C9 /* StudentController.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD2AD6A023A20B6100EBC5DB /* LaunchScreen.storyboard in Resources */,
+				DD7CED8923A217EB009C13C9 /* students.json in Resources */,
 				DDAD218923A212AC00B47EB6 /* Default-568h@2x.png in Resources */,
 				DD2AD69D23A20B6100EBC5DB /* Assets.xcassets in Resources */,
 				DD2AD69B23A20B5E00EBC5DB /* Main.storyboard in Resources */,
@@ -158,9 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7CED8E23A21863009C13C9 /* StudentController.swift in Sources */,
 				DD2AD69823A20B5E00EBC5DB /* StudentsViewController.swift in Sources */,
 				DD2AD69423A20B5E00EBC5DB /* AppDelegate.swift in Sources */,
 				DD2AD69623A20B5E00EBC5DB /* SceneDelegate.swift in Sources */,
+				DD7CED8B23A21829009C13C9 /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
