@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Students View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StudentsViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="154" width="414" height="708"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="9ov-rB-NcW" detailTextLabel="Ega-LT-XRp" style="IBUITableViewCellStyleValue1" id="JI7-os-moR">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StudentCell" textLabel="9ov-rB-NcW" detailTextLabel="Ega-LT-XRp" style="IBUITableViewCellStyleValue1" id="JI7-os-moR">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JI7-os-moR" id="Pxi-x6-QL3">
@@ -60,6 +60,9 @@
                                             <segment title="First name"/>
                                             <segment title="Last Name"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="sort:" destination="BYZ-38-t0r" eventType="valueChanged" id="ryz-Ka-Mo0"/>
+                                        </connections>
                                     </segmentedControl>
                                 </subviews>
                             </stackView>
@@ -80,6 +83,9 @@
                                             <segment title="Web"/>
                                             <segment title="UX"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="filter:" destination="BYZ-38-t0r" eventType="valueChanged" id="TC2-v7-f2Q"/>
+                                        </connections>
                                     </segmentedControl>
                                 </subviews>
                             </stackView>
@@ -97,6 +103,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="filterSelector" destination="bLF-xY-XK1" id="emH-P6-qji"/>
+                        <outlet property="sortSelector" destination="DPI-to-Y2C" id="QWC-2T-xB6"/>
+                        <outlet property="tableView" destination="ebP-xu-3lD" id="EfP-dJ-Tju"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
