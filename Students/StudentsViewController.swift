@@ -14,8 +14,17 @@ class StudentsViewController: UIViewController {
 	@IBOutlet weak var filterSelector: UISegmentedControl!
 	@IBOutlet weak var tableView: UITableView!
 
+	private var students: [Student] = []
+	private let studentController = StudentController()
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
+
+		// trailing closure syntax
+		studentController.loadFromPersistentStore { students, error in
+
+		}
+
 		tableView.dataSource = self
 	}
 
